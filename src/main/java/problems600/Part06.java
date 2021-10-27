@@ -42,7 +42,10 @@ public class Part06 {
             System.out.println("число больше");
         } else System.out.println("произведение цифр больше числа");
         //6.11
-
+        if (number < 0 && numberTwo < 0 || number > 0 && numberTwo > 0) {
+            System.out.println("Один и тот же знак");
+        } else if (number == 0 || numberTwo == 0)
+            System.out.println("Некорректно");
         //6.12
 
         //6.13
