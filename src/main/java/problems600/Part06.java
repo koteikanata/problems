@@ -47,10 +47,19 @@ public class Part06 {
         } else if (number == 0 || numberTwo == 0)
             System.out.println("Некорректно");
         //6.12
-
+        int c = 2;
+        if (numberTwo * numberTwo - 4 * number * c < 0) {
+            System.out.println("Да");
+        } else System.out.println("Нет");
         //6.13
-
+        if (numberTwo != 0) {
+            System.out.println("Дробь существует");
+        } else System.out.println("Дробь не существует");
         //6.14
-
+        if (numberTwo * number > 0) {
+            System.out.println("Дробь положительна");
+        } else  {
+            System.out.println("Дробь отрицательна");
+        }
     }
 }

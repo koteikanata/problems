@@ -1,13 +1,19 @@
-import problems600.Part02;
-import problems600.Part03;
-import problems600.Part04;
-import problems600.Part06;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        //Part02.methodTwo();
-        //Part03.methodThree();
-        //Part04.methodFour();
-        Part06.methodSix();
+    public static void main(String[] args) throws IOException {
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int students = Integer.parseInt(reader.readLine());
+        int tables = Integer.parseInt(reader.readLine());
+        if (tables * 2 >= students) {
+            System.out.println("влезут");
+        } else {
+            System.out.println("не влезут");
+        }
     }
 }
